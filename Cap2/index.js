@@ -1,4 +1,4 @@
-//Ejercicio 1!! Resulto
+//Ejercicio 1!! Resuelto
 
 for(let i = 0; i <= 10; i++) {
     document.write("#" + "<br>");
@@ -9,8 +9,10 @@ for(let i = 0; i <= 10; i++) {
         document.write("#");
     }
 }
-///////////////////////////////////////////////
 
+document.write("<br>")
+///////////////////////////////////////////////
+//Ejercicio 2!! Resuelto!
 for (let i = 0; i <= 100; i++){
     if(i % 3 === 0 && i % 5 === 0) {
         console.log("fizzBuzz");
@@ -23,4 +25,28 @@ for (let i = 0; i <= 100; i++){
         continue;
     }
     console.log(i);
+}
+
+let space = " "; 
+for(let i = 1; i <= 8; i++) {
+    for(let j = 1; j <= 8; j++){
+        // document.write(j)
+        if(i % 2 == 0) {
+            if(j % 2 == 0){
+                document.write("#");
+            } else {
+                document.write(` o `);
+            }
+        } else {
+             if( j % 2 == 0) {
+                 document.write(` o `);
+             } else {
+                 document.write("#")
+             }  
+        }
+            if(j == 8) {
+                document.write("<br>")
+            }
+        
+    }
 }
