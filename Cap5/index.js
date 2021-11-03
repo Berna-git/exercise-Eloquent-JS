@@ -45,3 +45,14 @@ function loop(n,iterador,staments) {
        staments(iterador(n));
 }
 loop(5,iterator,console.log);
+
+// Exercise 3 
+
+const cada = (array, functionFilter) => {
+    console.group(array.some(functionFilter));
+}
+
+let myArray = [1,2,3,4,10];
+
+cada(myArray, item => item < 10)
+
